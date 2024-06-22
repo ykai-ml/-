@@ -15,8 +15,8 @@ namespace 学生成绩管理系统
         public 学生端_综测()
         {
             InitializeComponent();
-            toolStripTextBox1.Text = LoadInfor.X_Sname;
-            toolStripTextBox2.Text = LoadInfor.X_Sno;
+            toolStripLabel4.Text = LoadInfor.X_Sname;
+            toolStripLabel3.Text = LoadInfor.X_Sno;
         }
 
         private void 成绩查询ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,9 +43,11 @@ namespace 学生成绩管理系统
             new 学生端_课程信息().Show();
         }
 
-        private void toolStripLabel1_Click(object sender, EventArgs e)
+
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             new 学生端登录界面().Show();
         }
     }

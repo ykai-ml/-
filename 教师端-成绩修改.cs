@@ -16,8 +16,8 @@ namespace 学生成绩管理系统
         public 教师端_成绩录入()
         {
             InitializeComponent();//初始化
-            toolStripTextBox1.Text = LoadInfor.T_Sname;
-            toolStripTextBox2.Text = LoadInfor.T_Sno;
+            toolStripLabel6.Text = LoadInfor.T_Sname;
+            toolStripLabel5.Text = LoadInfor.T_Sno;
             populate();//将函数写入
         }
         
@@ -54,11 +54,7 @@ namespace 学生成绩管理系统
             new 教师端_个人信息().Show();
         }
 
-        private void toolStripLabel2_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new 教师端登录界面().Show();
-        }
+
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -114,6 +110,12 @@ namespace 学生成绩管理系统
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new 教师端登录界面().Show();
         }
     }
 }

@@ -18,8 +18,8 @@ namespace 学生成绩管理系统
         public 管理员_班级列表()
         {
             InitializeComponent();
-            toolStripTextBox2.Text = LoadInfor.G_Sno;
-            toolStripTextBox1.Text = LoadInfor.G_Sname;
+            toolStripLabel5.Text = LoadInfor.G_Sno;
+            toolStripLabel6.Text = LoadInfor.G_Sname;
         }
         public void InitClass()
         {
@@ -56,11 +56,6 @@ namespace 学生成绩管理系统
             new 管理员_课程列表().Show();
         }
 
-        private void toolStripLabel1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new 管理员登录界面().Show();
-        }
 
         private void button1_Click(object sender, EventArgs e)//录入
         {
@@ -128,6 +123,12 @@ namespace 学生成绩管理系统
                     InitClass();
                 }
             }
+        }
+
+        private void toolStripLabel1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            new 管理员登录界面().Show();
         }
     }
 }
